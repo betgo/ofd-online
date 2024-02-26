@@ -1,0 +1,12 @@
+Doc_0/Attachs/Attachments.xml: ZipObject$1 {name: 'Doc_0/Attachs/Attachments.xml', dir: false, date: Sat Mar 19 2022 05:32:16 GMT+0800 (中国标准时间), comment: null, unixPermissions: null, …}
+Doc_0/Attachs/bker_issuer_20220101_01234567890123012345678900208989988989998896001.xml: ZipObject$1 {name: 'Doc_0/Attachs/bker_issuer_20220101_01234567890123012345678900208989988989998896001.xml', dir: false, date: Sat Mar 19 2022 05:32:16 GMT+0800 (中国标准时间), comment: null, unixPermissions: null, …}
+Doc_0/Document.xml: ZipObject$1 {name: 'Doc_0/Document.xml', dir: false, date: Sat Mar 19 2022 05:32:16 GMT+0800 (中国标准时间), comment: null, unixPermissions: null, …}
+Doc_0/DocumentRes.xml: ZipObject$1 {name: 'Doc_0/DocumentRes.xml', dir: false, date: Sat Mar 19 2022 05:32:16 GMT+0800 (中国标准时间), comment: null, unixPermissions: null, …}
+Doc_0/Pages/Page_0/Content.xml: ZipObject$1 {name: 'Doc_0/Pages/Page_0/Content.xml', dir: false, date: Sat Mar 19 2022 05:32:16 GMT+0800 (中国标准时间), comment: null, unixPermissions: null, …}
+Doc_0/PublicRes.xml: ZipObject$1 {name: 'Doc_0/PublicRes.xml', dir: false, date: Sat Mar 19 2022 05:32:16 GMT+0800 (中国标准时间), comment: null, unixPermissions: null, …}
+Doc_0/Res/image_54_5.jpg: ZipObject$1 {name: 'Doc_0/Res/image_54_5.jpg', dir: false, date: Sat Mar 19 2022 05:32:16 GMT+0800 (中国标准时间), comment: null, unixPermissions: null, …}
+Doc_0/Signs/Sign_0/Signature.xml: ZipObject$1 {name: 'Doc_0/Signs/Sign_0/Signature.xml', dir: false, date: Sat Mar 19 2022 05:32:16 GMT+0800 (中国标准时间), comment: null, unixPermissions: null, …}
+Doc_0/Signs/Sign_0/SignedValue.dat: ZipObject$1 {name: 'Doc_0/Signs/Sign_0/SignedValue.dat', dir: false, date: Sat Mar 19 2022 05:32:16 GMT+0800 (中国标准时间), comment: null, unixPermissions: null, …}
+Doc_0/Signs/Signatures.xml: ZipObject$1 {name: 'Doc_0/Signs/Signatures.xml', dir: false, date: Sat Mar 19 2022 05:32:16 GMT+0800 (中国标准时间), comment: null, unixPermissions: null, …}
+Doc_0/Tpls/Tpl_0/Content.xml: ZipObject$1 {name: 'Doc_0/Tpls/Tpl_0/Content.xml', dir: false, date: Sat Mar 19 2022 05:32:16 GMT+0800 (中国标准时间), comment: null, unixPermissions: null, …}
+OFD.xml: ZipObject$1 {name: 'OFD.xml', dir: false, date: Sat Mar 19 2022 05:32:16 GMT+0800 (中国标准时间), comment: null, unixPermissions: null, …}

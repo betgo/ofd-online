@@ -1,0 +1,59 @@
+{
+    "root": {
+        "data": {
+            "id": "cum6zoovzt40",
+            "created": 1691399241508,
+            "text": "Annotations"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cum707xtkl40",
+                    "created": 1691399283407,
+                    "text": "Page"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cum70hwta480",
+                            "created": 1691399305114,
+                            "text": "attribute"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cum712lw0a80",
+                                    "created": 1691399350166,
+                                    "text": "PageID",
+                                    "note": "引用注释所在页面的标识"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cum71e482x40",
+                            "created": 1691399375219,
+                            "text": "elements"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cum71iwtn880",
+                                    "created": 1691399385656,
+                                    "text": "FIleLoc",
+                                    "note": "指向包内的分页注释文件\n"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

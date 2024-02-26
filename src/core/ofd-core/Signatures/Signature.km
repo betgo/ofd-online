@@ -1,0 +1,308 @@
+{
+    "root": {
+        "data": {
+            "id": "cm1y7ekcwg00",
+            "created": 1660093989737,
+            "text": "Signature",
+            "note": "# Signature\n\n签名描述文件根节点",
+            "expandState": "expand"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cm1y7nf3i3s0",
+                    "created": 1660094009010,
+                    "text": "Elements",
+                    "expandState": "expand",
+                    "note": "## SignedId\n\n必选  签名要保护的原文及本次签名相关的信息\n"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cm1y7sf64jc0",
+                            "created": 1660094019898,
+                            "text": "SignedInfo",
+                            "note": "## SignedInfo\n\n必选 签名要保护的原文及本次签名相关信息"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cm1y8afzlfk0",
+                                    "created": 1660094059130,
+                                    "text": "Elements"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cm1y8dalsew0",
+                                            "created": 1660094065334,
+                                            "text": "Provider",
+                                            "note": "### Provider\n\n必选 创建签名时所用的签章组件提供者信息\n"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cm1y8gfaauo0",
+                                                    "created": 1660094072148,
+                                                    "text": "Attributes"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cm1ybtrm5ug0",
+                                                            "created": 1660094336284,
+                                                            "text": "ProviderName",
+                                                            "note": "#### ProviderName\n\n必选 xs:string 创建签名时所用的签章组件的提供者名称\n"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cm1ybxw79jc0",
+                                                            "created": 1660094345268,
+                                                            "text": "Version",
+                                                            "note": "#### Version\n\n可选 xs:string 创建签名时所用的签章组件的版本.\n"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cm1yc0abluw0",
+                                                            "created": 1660094350476,
+                                                            "text": "Company",
+                                                            "note": "#### Company\n\n可选 xs:string 创建签名时所用的签章组件的制造商\n"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cm1y8s9yeyo0",
+                                            "created": 1660094097947,
+                                            "text": "SignatureMethod",
+                                            "note": "### SignatureMethod\n\n必选 xs:string 签名方法,记录安全模块返回的签名算法代码,以便验证时使用"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cm1y8xgma1c0",
+                                            "created": 1660094109234,
+                                            "text": "SignatureDateTime",
+                                            "note": "### SignatureDateTime\n\n必选 xs:string 签名时间，记录安全模块返回的签名时间，以便验证时使用"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cm1y91gmyq80",
+                                            "created": 1660094117942,
+                                            "text": "References",
+                                            "note": "### References\n\n必选 包内文件计算所得的摘要记录列表.一个受本次签名保护的包内文件对应一个Reference节点"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cm1y9kuf5wo0",
+                                                    "created": 1660094160134,
+                                                    "text": "Attributes"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cm1y9rg6vig0",
+                                                            "created": 1660094174511,
+                                                            "text": "CheckMethod",
+                                                            "note": "#### CheckMethod\n\n可选 xs:string 摘要方法,视应用场景的不同使用不同的摘要方法。"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cm1y9okvhk80",
+                                                    "created": 1660094168264,
+                                                    "text": "Elements"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cm1y9xhdqzk0",
+                                                            "created": 1660094187644,
+                                                            "text": "Reference",
+                                                            "note": "#### Reference\n\n针对一个文件的摘要节点"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cm1ya4jh5uo0",
+                                                                    "created": 1660094203008,
+                                                                    "text": "Attributes"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "cm1yadts2wo0",
+                                                                            "created": 1660094223222,
+                                                                            "text": "FileRef",
+                                                                            "note": "##### FileRef\n\n必选 ST_Loc 指向包内的文件,使用绝对路径"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cm1ya8q34lk0",
+                                                                    "created": 1660094212116,
+                                                                    "text": "Elements"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "cm1yajh0n8o0",
+                                                                            "created": 1660094235511,
+                                                                            "text": "CheckValue",
+                                                                            "note": "##### CheckValues\n\n必选 xs:base64Binary 对包内文件进行摘要计算,对所得的二进制摘要值进行base64编码所得结果"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cm1y970voq80",
+                                            "created": 1660094130050,
+                                            "text": "StampAnnot",
+                                            "note": "### StampAnnot\n\n可选 本签名关联的外观(用OFD中的注释来表示),该节点可出现\n多次"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cm1yb0oi0ls0",
+                                                    "created": 1660094272969,
+                                                    "text": "Attribuates"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cm1yb9josfs0",
+                                                            "created": 1660094292269,
+                                                            "text": "ID",
+                                                            "note": "#### ID\n\n必选 xs:ID 签章注释的标识"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cm1ybb2d2g00",
+                                                            "created": 1660094295575,
+                                                            "text": "PageRef",
+                                                            "note": "#### PageRef\n\n必选 ST_RefID 引用外观注释所在的页面的标识"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cm1ybd76zxk0",
+                                                            "created": 1660094300221,
+                                                            "text": "Boundary",
+                                                            "note": "#### Boundary\n\n必选 ST_Box 签章注释的外观外边框位置,可用于签章注释在页面内的定位"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cm1ybjpam1k0",
+                                                            "created": 1660094314376,
+                                                            "text": "Clip",
+                                                            "note": "#### Clip\n\n可选 ST_Box 签章注释的外观裁剪设置"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cm1y9ciogp40",
+                                            "created": 1660094142010,
+                                            "text": "Seal",
+                                            "note": "### Seal\n\n可选 电子印章信息\n"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cm1yo98pa7k0",
+                                                    "created": 1660095310339,
+                                                    "text": "Attriubates"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cm1yojfymfk0",
+                                                            "created": 1660095332546,
+                                                            "text": "BaseLoc",
+                                                            "note": "#### BaseLoc\n\n必选 ST_Loc 指向包内的安全电子印章文件,遵循密码领域的相关规范"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cm1y7t4xja80",
+                            "created": 1660094021456,
+                            "text": "SignedValue",
+                            "note": "## SignedValue\n\n必选 ST_Loc 指向安全签名提供者所返回的针对签名描述文件计算所得的签名值文件"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cm1yq68gzwo0",
+                                    "created": 1660095460523,
+                                    "text": "Elements",
+                                    "layout_right_offset": {
+                                        "x": -2,
+                                        "y": 9
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cm1yq9pwyso0",
+                                            "created": 1660095468108,
+                                            "text": "BaseLoc",
+                                            "note": "### BaseLoc\n\n必选 ST_Loc 指向安全签名提供者所返回的针对签名描述文件计算所得的签名值文件地址"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

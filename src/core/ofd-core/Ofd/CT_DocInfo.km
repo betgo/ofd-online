@@ -1,0 +1,197 @@
+{
+    "root": {
+        "data": {
+            "id": "clv5xa0gfmg0",
+            "created": 1659404845367,
+            "text": "CT_DocInfo"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "clv7vqoo8a00",
+                    "created": 1659410367151,
+                    "text": "elements"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "clv7vu2j7r40",
+                            "created": 1659410374520,
+                            "text": "DocID",
+                            "note": "#### DocID\n \n可选 xs:string 采用UUID算法生成的由32个字符组成文件标识。每个DocID在文档创建或生成的时候进行分配"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clv7vxvaxxk0",
+                            "created": 1659410382790,
+                            "text": "Title",
+                            "note": "#### Title\n\n可选 xs:string 文档标题。标题可以与文件名不同"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clv7w3h9wew0",
+                            "created": 1659410395003,
+                            "text": "Author",
+                            "note": "#### Author\n\n可选 xs:string 文档作者"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clv7w6fsieo0",
+                            "created": 1659410401443,
+                            "text": "Subject",
+                            "note": "#### Subject\n\n可选 xs:string 文档主题"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clv7wb10ils0",
+                            "created": 1659410411433,
+                            "text": "Abstract",
+                            "note": "#### Abstract\n\n可选 xs:string 文档摘要与注释"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clv7wfczw3c0",
+                            "created": 1659410420865,
+                            "text": "CreationDate",
+                            "note": "#### CreationDate\n\n可选 xs:date 文档创建日期"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clv7wmnt4pc0",
+                            "created": 1659410436756,
+                            "text": "ModDate",
+                            "note": "#### ModDate\n\n可选 xs:date 文档最近修改日期"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clv7wq5ob880",
+                            "created": 1659410444367,
+                            "text": "DocUsage",
+                            "note": "#### DocUsage\n\n可选 xs:string 文档分类，默认值Normal，可取值如下：\n\n1. Normal ----- 普通文档\n2. EBook ----- 电子书\n3. ENewsPaper ----- 电子报纸\n4. EMagzine ----- 电子期刊杂志"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clv7wt3cm5s0",
+                            "created": 1659410450757,
+                            "text": "Cover",
+                            "note": "#### Cover \n\n可选 ST_Loc 文档封面，此路径指向一个图片文件"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clv7wws4vvk0",
+                            "created": 1659410458786,
+                            "text": "Keywords",
+                            "note": "#### Keywords\n\n关键词集合，每个关键词用1个“Keyword”子节点表达"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "clv7x1dl6js0",
+                                    "created": 1659410468790,
+                                    "text": "elements"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "clv7x43vbxc0",
+                                            "created": 1659410474733,
+                                            "text": "Keyword",
+                                            "note": "##### Keyword\n\n必填 xs:string 关键词"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "clv7x93rijc0",
+                            "created": 1659410485610,
+                            "text": "Creator",
+                            "note": "#### Creator\n \n可选 xs:string 创建文档的应用程序"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clv7xe8zz2o0",
+                            "created": 1659410496811,
+                            "text": "CreatorVersion",
+                            "note": "#### CreatorVersion\n\n可选 xs:string 创建文档的应用程序的版本信息"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clv7xi5gsf40",
+                            "created": 1659410505304,
+                            "text": "CustomDatas",
+                            "note": "#### CustomDatas\n\n用户自定义元数据集合，其子节点为CustomData"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "clv7xlksze00",
+                                    "created": 1659410512762,
+                                    "text": "elements"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "clv7xnmp0ag0",
+                                            "created": 1659410517230,
+                                            "text": "CustomData",
+                                            "note": "##### CustomData\n\n必选 xs:string 用户定义元数据集合，可以指定用一个名称及其对应的值"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "clv7xwh5b400",
+                                                    "created": 1659410536485,
+                                                    "text": "attributes"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "clv7y2nuayo0",
+                                                            "created": 1659410549951,
+                                                            "text": "Name",
+                                                            "note": "###### Name\n\n必选 xs:string 用户自定义元数据名称"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ofd 预览</title>
+    <script src="/dist/preview.min.js"></script>
+    <script>
+      // NN_OFD.setOptions({
+      //   wasmUrl: "/nnuo-ofd/ofd.wasm"
+      // })
+    </script>
+    <style>
+      html,
+      body,
+      div {
+        margin: 0;
+        padding: 0;
+      }
+
+      .input-file {
+        position: relative;
+        display: flex;
+        cursor: pointer;
+        width: 100%;
+        padding: 10px 0;
+        justify-content: center;
+        border-bottom: 1px solid #333;
+      }
+
+      .input-file input {
+        color: transparent;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        font-size: 100px;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      #test {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="input-file">
+      <span>请选择文件</span>
+      <input
+        type="file"
+        id="file"
+        accept=".ofd,.xml,.dcm,.pdf,.png,.cc,.mp4,.zip,.bmp,.docx,.xls,.xlsx,.ppt,.pptx,.doc"
+      />
+    </div>
+    <div id="test"></div>
+    <div id="url"></div>
+    <!-- <div style="position: absolute;left:0;top:30px;width:200px;height:400px;z-index: 0;background-color: antiquewhite;">z-index0
+    <div style="position: absolute;left:0;top:30px;z-index: 2;width:200px;height:200px;background-color: #fff;">
+      <div style="position: absolute;left:0;top:30px;z-index: 4;width:200px;height:200px;background-color: #000;"></div>
+    </div>
+    <div style="position: absolute;left:0;top:30px;z-index: 3;width:200px;height:200px;background-color: #fff;"></div>
+  </div> -->
+    <script>
+      (function () {
+        const showDom = document.querySelector('#test');
+
+        var inputDom = document.querySelector('#file');
+        inputDom.addEventListener('change', function (e) {
+          console.log('e:', e);
+          document.querySelector('#test').innerHTML = '正传解析文件...';
+          var files = e.target.files;
+          var readFile = new FileReader();
+          OFD_PREVIEW.getMime(files[0]).then(fileType => {
+            if (fileType === 'xml') {
+              OFD_PREVIEW.XMLRender({
+                file: files[0],
+                content: document.querySelector('#test')
+              }).catch(err => {
+                console.log({
+                  ...err
+                });
+              });
+            } else {
+              OFD_PREVIEW.getSVGDoms({
+                file: files[0],
+                content: document.querySelector('#test')
+                // screenWidth: 375
+              }).catch(err => {
+                console.log({
+                  ...err
+                });
+              });
+            }
+          });
+        });
+        // 从url中获取OFD
+        var url = window.location.href.split('?')[1];
+        if (url && url.split('url=')[1]) {
+          url = window.decodeURIComponent(url.split('url=')[1]);
+          OFD_PREVIEW.getSVGDoms({
+            file: url,
+            content: document.querySelector('#url')
+          }).catch(err => {
+            console.log({
+              ...err
+            });
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

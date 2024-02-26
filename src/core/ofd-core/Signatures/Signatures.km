@@ -1,0 +1,315 @@
+{
+    "root": {
+        "data": {
+            "id": "cm1y7ekcwg00",
+            "created": 1660093989737,
+            "text": "Signatures"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cm1ye4ssn6g0",
+                    "created": 1660094517028,
+                    "text": "Signature",
+                    "layout_mind_offset": {
+                        "x": -88,
+                        "y": 132
+                    },
+                    "note": "## Signature\n\n 数字签名或安全签章在列表中的注册信息,一次签名或签章对应一个"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cm1yg92vpb40",
+                            "created": 1660094683073,
+                            "text": "Attribuates",
+                            "layout_right_offset": {
+                                "x": 5,
+                                "y": 232
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cm1yge51lmo0",
+                                    "created": 1660094694088,
+                                    "text": "ID",
+                                    "note": "### ID\n\nxs:ID 必选 签名或签章的标识"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cm1ygfsp1w80",
+                                    "created": 1660094697695,
+                                    "text": "Type",
+                                    "note": "### Type\n\nxs:string 可选 签名节点的类型,目前规定了两个可选值,Seal表示是安全签章,Sign表示是纯数字签名"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cm1yghfno400",
+                                    "created": 1660094701260,
+                                    "text": "BaseLoc",
+                                    "note": "### BaseLoc\n\nST_Loc 必选 指向包内的签名描述文件"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cm1y7nf3i3s0",
+                            "created": 1660094009010,
+                            "text": "Elements",
+                            "layout_mind_offset": {
+                                "x": -129,
+                                "y": -130
+                            },
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cm1y7sf64jc0",
+                                    "created": 1660094019898,
+                                    "text": "SignedInfo"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cm1y8afzlfk0",
+                                            "created": 1660094059130,
+                                            "text": "Elements"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cm1y8dalsew0",
+                                                    "created": 1660094065334,
+                                                    "text": "Provider"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cm1y8gfaauo0",
+                                                            "created": 1660094072148,
+                                                            "text": "Attributes"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cm1ybtrm5ug0",
+                                                                    "created": 1660094336284,
+                                                                    "text": "ProviderName"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cm1ybxw79jc0",
+                                                                    "created": 1660094345268,
+                                                                    "text": "Version"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cm1yc0abluw0",
+                                                                    "created": 1660094350476,
+                                                                    "text": "Company"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cm1y8s9yeyo0",
+                                                    "created": 1660094097947,
+                                                    "text": "SignatureMethod"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cm1y8xgma1c0",
+                                                    "created": 1660094109234,
+                                                    "text": "SignatureDateTime"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cm1y91gmyq80",
+                                                    "created": 1660094117942,
+                                                    "text": "References"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cm1y9kuf5wo0",
+                                                            "created": 1660094160134,
+                                                            "text": "Attributes"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cm1y9rg6vig0",
+                                                                    "created": 1660094174511,
+                                                                    "text": "CheckMethod"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cm1y9okvhk80",
+                                                            "created": 1660094168264,
+                                                            "text": "Elements"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cm1y9xhdqzk0",
+                                                                    "created": 1660094187644,
+                                                                    "text": "Reference"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "cm1ya4jh5uo0",
+                                                                            "created": 1660094203008,
+                                                                            "text": "Attributes"
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "data": {
+                                                                                    "id": "cm1yadts2wo0",
+                                                                                    "created": 1660094223222,
+                                                                                    "text": "FileRef"
+                                                                                },
+                                                                                "children": []
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "cm1ya8q34lk0",
+                                                                            "created": 1660094212116,
+                                                                            "text": "Elements"
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "data": {
+                                                                                    "id": "cm1yajh0n8o0",
+                                                                                    "created": 1660094235511,
+                                                                                    "text": "CheckValues"
+                                                                                },
+                                                                                "children": []
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cm1y970voq80",
+                                                    "created": 1660094130050,
+                                                    "text": "StampAnnot"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cm1yb0oi0ls0",
+                                                            "created": 1660094272969,
+                                                            "text": "Attribuates"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cm1yb9josfs0",
+                                                                    "created": 1660094292269,
+                                                                    "text": "ID"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cm1ybb2d2g00",
+                                                                    "created": 1660094295575,
+                                                                    "text": "PageRef"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cm1ybd76zxk0",
+                                                                    "created": 1660094300221,
+                                                                    "text": "Boundary"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cm1ybjpam1k0",
+                                                                    "created": 1660094314376,
+                                                                    "text": "Clip"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cm1y9ciogp40",
+                                                    "created": 1660094142010,
+                                                    "text": "Seal"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cm1y7t4xja80",
+                                    "created": 1660094021456,
+                                    "text": "SignedValue"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cm1yd9ootlc0",
+                    "created": 1660094449300,
+                    "text": "MaxSignId",
+                    "layout_mind_offset": {
+                        "x": 431,
+                        "y": -112
+                    },
+                    "note": "## MaxSignId\n\nxs:ID 可选 安全标识的最大值,作用与文档人口文件Document. xml中的MaxID相同,为了避免在签名时影响文档入口文件,采用了与ST, _ID不一样的ID编码方式。推荐使用“sNNN”的编码方式,NNN从1开始"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

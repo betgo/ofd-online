@@ -1,0 +1,862 @@
+{
+    "root": {
+        "data": {
+            "id": "clv83qkzaf40",
+            "created": 1659410993841,
+            "text": "Document",
+            "expandState": "expand"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "clva2p808z40",
+                    "created": 1659416554736,
+                    "text": "elements",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "clva2whzyb40",
+                            "created": 1659416570577,
+                            "text": "CommonData",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "clva4hlpk3k0",
+                                    "created": 1659416694878,
+                                    "text": "elements",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "clva4shw5dc0",
+                                            "created": 1659416718592,
+                                            "text": "MaxUnitID",
+                                            "note": "### MaxUnitID\n\n当前文档中所有对象使用标识的最大值，初始值为0。MaxUnitID主要用于文档编辑，在向文档中新增加一个对象时，需要分配一个新的标识，新标识取值为 MaxUnitID + 1，同时需要修改此MaxUnitID值\n",
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "clva4ymv2xc0",
+                                            "created": 1659416731954,
+                                            "text": "PageArea",
+                                            "note": "### PageArea\n\n指定该文档页面区域的默认大小和位置",
+                                            "hyperlink": "./页边界层次结构.png",
+                                            "hyperlinkTitle": "",
+                                            "expandState": "expand"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "clva7hqyw540",
+                                                    "created": 1659416930289,
+                                                    "text": "elements",
+                                                    "expandState": "expand"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "clva7m6citc0",
+                                                            "created": 1659416939926,
+                                                            "text": "PhysicalBox",
+                                                            "note": "#### PhysicalBox\n\n必填 ST_Box 页面物理区域，左上角的坐标为页面空间坐标系的原点",
+                                                            "expandState": "expand"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clva7vsjg740",
+                                                            "created": 1659416960859,
+                                                            "text": "ApplicationBox",
+                                                            "note": "#### ApplicationBox\n\n选填 ST_Box 显示区域，页面内容实际显示或者打印输出的区域，位于页面物理区域内，包含页眉、页脚、版心等内容\n[例外处理]如果显示区域不完全位于页面物理区域内，页面物理区域外的部分则会忽略。如果显示区域完全位于页面物理区域外，则该页面为空白",
+                                                            "expandState": "expand"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clva7zw1kjc0",
+                                                            "created": 1659416969778,
+                                                            "text": "ContentBox",
+                                                            "note": "#### ContentBox\n\n选填 ST_Box 版心区域，即文件的正文区域，位于显示区域内。左上角坐标决定了其在显示区域内的位置[例外处理] 如果版心区域不完全位于显示区域内，显示区域外的部分则被忽略。如果版心区域完全位于显示区域外，则版心内容不被绘制\n",
+                                                            "expandState": "expand"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clva83be5k80",
+                                                            "created": 1659416977236,
+                                                            "text": "BleedBox",
+                                                            "note": "#### BleedBox\n\n选填 ST_Box 出血区域，即超出设备性能限制的额外出血区域，位于页面物理区域外。不出现时，默认值为页面物理区域[例外处理]如果出血区域不完全位于页面物理区域外，页面物理区域内部分则被忽略。如果出血区域完全位于页面物理区域内，则出血区域无效",
+                                                            "expandState": "expand"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "clva52m7vl40",
+                                            "created": 1659416740622,
+                                            "text": "PublicRes",
+                                            "expandState": "expand",
+                                            "note": "### PublicRes\n\n公共资源序列，每个节点指向OFD包内的一个资源描述文档，资源部分的描述见7.9，字型和颜色空间等宜在公共资源文件中描述"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "clva56dei1s0",
+                                            "created": 1659416748796,
+                                            "text": "DocumentRes",
+                                            "expandState": "expand",
+                                            "note": "### DocumentRes\n\n文档资源序列，每个节点指向OFD包内的一个资源描述文档，资源部分的描述见7.9，绘制参数、多媒体和矢量图像等宜在文档资源文件描述"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "clva5b79t940",
+                                            "created": 1659416759309,
+                                            "text": "TemplatePage",
+                                            "expandState": "expand"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "clvao37xcy00",
+                                                    "created": 1659418230853,
+                                                    "text": "attributes"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "clvaoea00ao0",
+                                                            "created": 1659418254923,
+                                                            "text": "BaseLoc"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvaoh89y280",
+                                                            "created": 1659418261349,
+                                                            "text": "ID"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvaozekpj40",
+                                                            "created": 1659418300912,
+                                                            "text": "Name"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvap0p9pag0",
+                                                            "created": 1659418303736,
+                                                            "text": "ZOrder"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "clva6k6jzw80",
+                                            "created": 1659416857221,
+                                            "text": "DefaultCS",
+                                            "expandState": "expand",
+                                            "note": "### DefaultCS\n\n可选 ST_RefID 引用在资源文件中定义的颜色空间标识，有关颜色空间描述见8.3.1，如果此项不存在，采用RGB作为默认颜色空间"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "clva30trw400",
+                            "created": 1659416579997,
+                            "text": "Pages",
+                            "expandState": "expand",
+                            "note": "## Pages\n\n页数，有关页数的描述"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "clvaicyuhgw0",
+                                    "created": 1659417781887,
+                                    "text": "elements"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "clvaj9q35t40",
+                                            "created": 1659417853191,
+                                            "text": "Page",
+                                            "note": "### Page\n\n叶节点。一个页树中可以包含一个或多个页节点，页顺序是根据页树进行前序遍历事叶节点的访问顺序"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "clvajbqoo540",
+                                                    "created": 1659417857581,
+                                                    "text": "attributes"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "clvajhzsxdk0",
+                                                            "created": 1659417871193,
+                                                            "text": "BaseLoc",
+                                                            "note": "#### BaseLoc\n\n必填 ST_ID 声明该页的标识，不能与已有标识重复"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvajs416a80",
+                                                            "created": 1659417893217,
+                                                            "text": "ID",
+                                                            "note": "#### ID\n\n必填 ST_Loc 指向页对象描述文件"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "clva34vgr600",
+                            "created": 1659416588806,
+                            "text": "Outlines",
+                            "expandState": "collapse",
+                            "note": "## Outlines\n\n大纲"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "clvb5pkpbj40",
+                                    "created": 1659419611706,
+                                    "text": "elements"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "clvb5shi4dk0",
+                                            "created": 1659419618043,
+                                            "text": "OutlineElem",
+                                            "note": "### OutlineElem\n\n大纲节点"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "clvb5yb85c80",
+                                                    "created": 1659419630724,
+                                                    "text": "attributes"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "clvb65g89r40",
+                                                            "created": 1659419646264,
+                                                            "text": "Title",
+                                                            "note": "#### Title\n\n必填 xs:string 大纲节点标题"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvb6ade0ko0",
+                                                            "created": 1659419656976,
+                                                            "text": "Count",
+                                                            "note": "#### Count \n\n可选 xs:int 该节点下所有页节点的数目参考值，应根据该节点下实际出现的子节点数为准\n默认 0"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvb6by53y80",
+                                                            "created": 1659419660408,
+                                                            "text": "Expanded",
+                                                            "note": "#### Expanded\n\n可选 xs:boolean 在有子节点存在时"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "clvb624v1j40",
+                                                    "created": 1659419639046,
+                                                    "text": "elements"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "clvb6h5wwpc0",
+                                                            "created": 1659419671762,
+                                                            "text": "Actions",
+                                                            "note": "#### Actions\n\n可选 当此大纲节点被激活时将执行的动作序列"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "clvbewdingw0",
+                                                                    "created": 1659420331786,
+                                                                    "text": "elements"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "clvbf05jrzs0",
+                                                                            "created": 1659420340012,
+                                                                            "text": "Action",
+                                                                            "note": "##### Action\n\n可选  CT_Action 当此大纲节点被激活时将执行的动作，关于动作的描述详见 Action"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvb6jn9zsw0",
+                                                            "created": 1659419677165,
+                                                            "text": "OutlineElem",
+                                                            "note": "#### OutlineElem\n\n该节点的子大纲节点。层层嵌套，形成树状结构"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "clva3a3yhm80",
+                            "created": 1659416600203,
+                            "text": "elements",
+                            "expandState": "collapse",
+                            "note": "## Permission\n\n可选 CT_Permissions 文档权限声明"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "clvbkf8va600",
+                                    "created": 1659420764685,
+                                    "text": "elements"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "clvbkilhqiw0",
+                                            "created": 1659420771979,
+                                            "text": "CT_Permission",
+                                            "note": "### CT_Permission\n\n文档权限声明属性"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "clvbkpol26g0",
+                                                    "created": 1659420787403,
+                                                    "text": "elements"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "clvbkvom1yw0",
+                                                            "created": 1659420800466,
+                                                            "text": "Edit",
+                                                            "note": "#### Edit\n\n可选 xs:boolean 是否允许编辑 \n默认值为 true"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvbl04k1gw0",
+                                                            "created": 1659420810137,
+                                                            "text": "Annot",
+                                                            "note": "#### Annot\n\n可选 xs:boolean 是否允许添加或修改标注\n\n默认值为 true"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvbl21zwlk0",
+                                                            "created": 1659420814336,
+                                                            "text": "Export",
+                                                            "note": "#### Expot\n\n可选 xs:boolean 是否允许导出\n默认值为true"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvbl3og6jk0",
+                                                            "created": 1659420817870,
+                                                            "text": "Signature",
+                                                            "note": "#### Signature \n\n可选 xs:boolean 是否允许进行数字签名\n默认值为true"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvbl7xqyw80",
+                                                            "created": 1659420827139,
+                                                            "text": "Watermark",
+                                                            "note": "#### Watermark\n\n可选 xs:boolean 是否允许添加水印\n默认值为true"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvbldl32j40",
+                                                            "created": 1659420839434,
+                                                            "text": "PrintScreen",
+                                                            "note": "#### PrintScreen\n\n可选 xs:boolean 是否允许截屏\n默认值为true"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvblgdgw3s0",
+                                                            "created": 1659420845504,
+                                                            "text": "Print",
+                                                            "note": "#### Print\n\n可选 xs:boolean 打印权限，其具体的权限和份数设置由其属性Printable 及Copies控制，若不设置Print节点，则默认为可打印，并且打印份数不受限制"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "clvbtd60p0w0",
+                                                                    "created": 1659421465437,
+                                                                    "text": "attributes"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "clvbujrpk9s0",
+                                                                            "created": 1659421558173,
+                                                                            "text": "Printable",
+                                                                            "note": "##### Printable\n\n文档是否允许答应 默认true"
+                                                                        },
+                                                                        "children": []
+                                                                    },
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "clvbunn28q80",
+                                                                            "created": 1659421566599,
+                                                                            "text": "Copies",
+                                                                            "note": "##### Copies\n\n打印份数，在Printable为true时有效，若Printable为true并且不设置Copies则打印份数不受限，若Copies为负数，打印份数不受限，当Copies为0是，不允许打印，大于0时则代表实际可打印的份数值\n"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvblhw8tjc0",
+                                                            "created": 1659420848816,
+                                                            "text": "ValidPeriod",
+                                                            "note": "#### ValidPeriod\n\n有效期，即此文档允许访问的期限，其具体日期取决于开始日期和结束日期，其中开始日期不能晚于结束日期，并且开始日期和结束日期最少出现一个。当不设置开始日期时，代表不限制开始日期，当不设置结束日期时代表不限定结束日期；当不设置此节点时，表示开始和结束均不受限"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "clvbxn4v8dk0",
+                                                                    "created": 1659421800591,
+                                                                    "text": "attributes"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "clvbxre8tg80",
+                                                                            "created": 1659421809866,
+                                                                            "text": "StartDate",
+                                                                            "note": "##### StartDate\n\n可选 xs:date 有效开始日期"
+                                                                        },
+                                                                        "children": []
+                                                                    },
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "clvbxvbsa5s0",
+                                                                            "created": 1659421818424,
+                                                                            "text": "EndDate",
+                                                                            "note": "##### EndDate\n\n可选 xs:date 有效结束日期"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "clva3ehd9bs0",
+                            "created": 1659416609721,
+                            "text": "Actions",
+                            "expandState": "expand",
+                            "note": "## Actions\n\n可选 Action 文档关联的动作序列，当存在多个Action对象时，所有动作依次执行"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "clvc6baehu00",
+                                    "created": 1659422480082,
+                                    "text": "elements"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "clvc6dnl8800",
+                                            "created": 1659422485233,
+                                            "text": "CT_Action",
+                                            "note": "### CT_Action\n\n文档关联动作，事件类型应为DO(文档打开)"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "clva3gy7dgg0",
+                            "created": 1659416615093,
+                            "text": "Vpreferences",
+                            "expandState": "collapse",
+                            "note": "## VPreferences\n\n文档的视图首选项"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "clvbyusfnyo0",
+                                    "created": 1659421895618,
+                                    "text": "elements"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "clvbyxzrne00",
+                                            "created": 1659421902592,
+                                            "text": "CT_VPreferences"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "clvbz41szag0",
+                                                    "created": 1659421915776,
+                                                    "text": "elements"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "clvbzeqz1mo0",
+                                                            "created": 1659421939065,
+                                                            "text": "PageMode",
+                                                            "note": "### PageMode\n\n可选 xs:string 窗口模式，默认None 可取值：\n    1. None ----- 常规模式\n    2. FullScreen ----- 打开后全文显示\n    3. UseOutlines ----- 同时呈现文档大纲\n    4. UseThumbs ----- 同时呈现缩略图\n    5. UseCustomTags ----- 同时呈现语义结构\n    6. UseLayer ----- 同时呈现图层\n    7. UseAttachs ----- 同时呈现附件\n    8. UseBookmarks ----- 同时呈现书签"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvbzi986sg0",
+                                                            "created": 1659421946700,
+                                                            "text": "PageLayout",
+                                                            "note": "### PageLayout\n\n可选 xs:string 页面布局模式，默认OneColunmn 取值如下：\n    1. OnePage ----- 单页模式\n    2. OneColumn ----- 单列模式\n    3. TwoPageL ----- 对开模式\n    4. TwoPageR ----- 对开靠右模式\n    5. TwoColumnL ----- 对开连续模式\n    6. TwoColumnR ----- 对开连续靠右模式"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvbzlomhoo0",
+                                                            "created": 1659421954161,
+                                                            "text": "TabDisplay",
+                                                            "note": "### TabDisplay\n\n可选 xs:string  标题栏显示模式，默认FileName 取值如下：\n    1. FileName ----- 文件名称\n    2. DocTitle ----- 呈现元数据中的Title属性\n当设置为DocTitle但不存在Title属性时，按照FileName处理"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvbzqzz2ww0",
+                                                            "created": 1659421965731,
+                                                            "text": "HideToolbar",
+                                                            "note": "### HideToolbar\n\n可选 xs:boolean 是否隐藏工具栏 默认值false"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvbzyfmluw0",
+                                                            "created": 1659421981915,
+                                                            "text": "HideMenubar",
+                                                            "note": "### HideMenubar\n\n可选 xs:boolean 是否隐藏菜单栏 默认值false"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvc04hmb4o0",
+                                                            "created": 1659421995096,
+                                                            "text": "HideWindowUI",
+                                                            "note": "### HideWindowUI\n\n可选 xs:boolean 是否隐藏主窗口之外的其它窗体组件 默认值false"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "clvc0w516bc0",
+                                                            "created": 1659422055285,
+                                                            "text": "Zooms"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "clvc136emjc0",
+                                                                    "created": 1659422070606,
+                                                                    "text": "elements"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "clvc15mgq3k0",
+                                                                            "created": 1659422075930,
+                                                                            "text": "ZoomMode",
+                                                                            "note": "#### ZoomMode\n\n可选 xs:string 自动缩放模式 默认值 Default 可选值如下：\n    1. Default ----- 默认缩放\n    2. FitHeight ----- 适合高度\n    3. FitWidth ----- 适合宽度\n    4. FitRect ---- 适合区域"
+                                                                        },
+                                                                        "children": []
+                                                                    },
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "clvc1arbi4w0",
+                                                                            "created": 1659422087108,
+                                                                            "text": "Zoom",
+                                                                            "note": "#### Zoom\n\n可选 xs:double 文档缩放率"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "clva3pb1aow0",
+                            "created": 1659416633283,
+                            "text": "Bookmarks",
+                            "expandState": "collapse",
+                            "note": "## Bookmarks\n\n文档的书签集，包含一组书签"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "clvatc39heo0",
+                                    "created": 1659418641983,
+                                    "text": "elements"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "clvateqtr140",
+                                            "created": 1659418647762,
+                                            "text": "Bookmark",
+                                            "note": "### Bookmark\n\n一组书签"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "clvatnxhm0o0",
+                                                    "created": 1659418667756,
+                                                    "text": "attributes"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "clvaty3r80o0",
+                                                            "created": 1659418689902,
+                                                            "text": "Name",
+                                                            "note": "#### Name\n\n书签名称"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "clvats9h3kw0",
+                                                    "created": 1659418677187,
+                                                    "text": "elements"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "clvatu9zasg0",
+                                                            "created": 1659418681572,
+                                                            "text": "Dest",
+                                                            "note": "#### Dest\n\n书签对应的文档位置"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "clvau1q0lkg0",
+                                                                    "created": 1659418697779,
+                                                                    "text": "attributes"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "clvavxcbfa80",
+                                                                            "created": 1659418844972,
+                                                                            "text": "Type",
+                                                                            "note": "##### Type\n\n必填 xs:string 声明目标区域的描述方法,可取值列举如下：\n1.  XYZ 目标区域由左上角位置（Left,Top）以及页面缩放比例（Zoom）确定\n2.  Fit 适合整个窗口区域\n3.  FitH 适合窗口宽度，目标区域仅由Top确定\n4.  FitV 适合窗口高度，目标区域仅由Left确定\n5.  FitR 适合窗口内的目标区域，目标区域为（Left、Top、Right、Bottom）所确定的矩形区域\n"
+                                                                        },
+                                                                        "children": []
+                                                                    },
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "clvaw016f6g0",
+                                                                            "created": 1659418850828,
+                                                                            "text": "PageID",
+                                                                            "note": "##### PageID\n\n必填 ST_RefID 引用跳转目标页面的标识"
+                                                                        },
+                                                                        "children": []
+                                                                    },
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "clvaw2i8eow0",
+                                                                            "created": 1659418856213,
+                                                                            "text": "Left",
+                                                                            "note": "##### Left\n\n可选 xs:double 目标区域左上角X坐标 默认0"
+                                                                        },
+                                                                        "children": []
+                                                                    },
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "clvaw434g3c0",
+                                                                            "created": 1659418859653,
+                                                                            "text": "Top",
+                                                                            "note": "##### Top\n\n可选 xs:double 目标区域左上角Y坐标 默认0"
+                                                                        },
+                                                                        "children": []
+                                                                    },
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "clvaw5yg7480",
+                                                                            "created": 1659418863724,
+                                                                            "text": "Right",
+                                                                            "note": "##### Right\n\n可选 xs:double 目标区域右下角x坐标"
+                                                                        },
+                                                                        "children": []
+                                                                    },
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "clvaw9c76m00",
+                                                                            "created": 1659418871086,
+                                                                            "text": "Zoom",
+                                                                            "note": "##### zoom\n\n可选 xs:double 目标区域页面缩放比例，为0或者不出现则按照当前缩放比例跳转，可取值范围[0.1 64.0]"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "clva3t409uw0",
+                            "created": 1659416641565,
+                            "text": "Annotations",
+                            "expandState": "expand",
+                            "note": "## Annotations\n\n指向注释列表文件，有关注释描述 第15章"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clva3xqsly80",
+                            "created": 1659416651650,
+                            "text": "CustomTags",
+                            "expandState": "expand",
+                            "note": "## CustomTags\n\n指向自定义标引列表文件，有关自定义标引描述 第16章"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clva41sk17s0",
+                            "created": 1659416660464,
+                            "text": "Attachments",
+                            "expandState": "expand",
+                            "note": "## Attachments\n\n指向附件列表文件。有关附件描述 第20章"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clva47p6wk00",
+                            "created": 1659416673321,
+                            "text": "Extensions",
+                            "expandState": "expand",
+                            "note": "## Extensions\n\n指向扩展列表文件，有关扩展描述 第17章"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

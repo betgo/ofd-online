@@ -1,0 +1,162 @@
+{
+    "root": {
+        "data": {
+            "id": "clarynd4f8g0",
+            "created": 1657334258123,
+            "text": "OFD.xml"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "clarypirpqo0",
+                    "created": 1657334262818,
+                    "text": "attributes",
+                    "layout_mind_offset": {
+                        "x": -146,
+                        "y": -57
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "clarz8ce7ow0",
+                            "created": 1657334303792,
+                            "text": "DocType"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "clas5ff4li80",
+                                    "created": 1657334789379,
+                                    "text": "OFD"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "clarznsib8o0",
+                            "created": 1657334337418,
+                            "text": "Version"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clarzrv2ltc0",
+                            "created": 1657334346280,
+                            "text": "xmlns:ofd"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "clas09sd4a00",
+                    "created": 1657334385298,
+                    "text": "elements\n(1-∞)",
+                    "layout_mind_offset": {
+                        "x": 307,
+                        "y": 69
+                    },
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "clas1ufri280",
+                            "created": 1657334508613,
+                            "text": "ofd:DocBody",
+                            "layout_right_offset": {
+                                "x": 266,
+                                "y": 5
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "clas2lx3wkg0",
+                                    "created": 1657334568435,
+                                    "text": "ofd:Signatures",
+                                    "layout_right_offset": {
+                                        "x": 239,
+                                        "y": -14
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "clas4vuxdpk0",
+                                            "created": 1657334746799,
+                                            "text": "Doc_N/Signs/Signatures.xml",
+                                            "layout_right_offset": {
+                                                "x": 359,
+                                                "y": 0
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "clas2pu873s0",
+                                    "created": 1657334576968,
+                                    "text": "ofd:DocInfo",
+                                    "layout_right_offset": {
+                                        "x": 229,
+                                        "y": 11
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "clas48r2ht40",
+                                            "created": 1657334696500,
+                                            "text": "ofd:DocID",
+                                            "layout_right_offset": {
+                                                "x": 215,
+                                                "y": -3
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "clas2u16rc00",
+                                    "created": 1657334586096,
+                                    "text": "ofd:DocRoot",
+                                    "layout_right_offset": {
+                                        "x": 228,
+                                        "y": 19
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "clas4dse6fk0",
+                                            "created": 1657334707465,
+                                            "text": "Doc_N/Document.xml",
+                                            "layout_right_offset": {
+                                                "x": 320,
+                                                "y": -2
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

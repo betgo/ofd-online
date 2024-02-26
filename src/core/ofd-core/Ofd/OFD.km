@@ -1,0 +1,114 @@
+{
+    "root": {
+        "data": {
+            "id": "clv5ptqgtg00",
+            "created": 1659404261385,
+            "text": "OFD"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "clv5q3dp28w0",
+                    "created": 1659404282381,
+                    "text": "Elements",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "clv5su6chb40",
+                            "created": 1659404497438,
+                            "text": "DocBody",
+                            "note": "\n## DocBody\n\n必填 文件对象入口，可以存在多个，以便在一个文档中包含多个板式文档\n\n\n"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "clv5tcm2nrk0",
+                                    "created": 1659404537571,
+                                    "text": "Elements"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "clv5tfr0mao0",
+                                            "created": 1659404544400,
+                                            "text": "DocInfo",
+                                            "note": "### DocInfo\n\nCT_DocInfo 文档元数据信息描述，文档元数据信息具体结构见图[CT_DocInfo.km](./CT_DocInfo.km)"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "clv5tlu5go00",
+                                            "created": 1659404557651,
+                                            "text": "DocRoot",
+                                            "note": "### DocRoot\n\n可选 ST_Loc 指向文档根节点，有关文档跟节点描述见7.5"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "clv5ts5wuvk0",
+                                            "created": 1659404571422,
+                                            "text": "Versions",
+                                            "note": "### Versions\n\n包含多个版本描述节点，用于定义文件因注释和其他改动产生的版本信息，见第19章"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "clv5tvtmu8o0",
+                                            "created": 1659404579387,
+                                            "text": "Signatures",
+                                            "note": "### Signatures\n\n可选 ST_Loc 指向该文档中签名和签章结构，见第18章"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "clv5q9muzqg0",
+                    "created": 1659404295996,
+                    "text": "attributes",
+                    "layout_mind_offset": {
+                        "x": 21,
+                        "y": 1
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "clv5qq005rs0",
+                            "created": 1659404331619,
+                            "text": "Version",
+                            "layout_left_offset": {
+                                "x": -5,
+                                "y": -22
+                            },
+                            "note": "## Version\n\n必填 xs:string 文件格式的版本号，取值为“1.0”"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "clv5qzc5iu00",
+                            "created": 1659404351945,
+                            "text": "DocType",
+                            "note": "## DocType\n\n必须 xs:string 文件格式子集类型，取值为“OFD”，表明此文件符合本标准。取值为“OFD-A”，表明此文件符合OFD存档规范"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

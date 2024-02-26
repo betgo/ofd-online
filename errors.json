@@ -1,0 +1,8 @@
+{
+  "0": "Network response was not OK",
+  "1": "Invalid UTF-8 continuation byte: c",
+  "2": "UTF-8 overlong encoding, codepoint encoded in 4 bytes: cp",
+  "3": "Invalid UTF-8 starting byte: c",
+  "4": "Invalid UTF-8 starting byte (since 2003 it is restricted to 4 bytes): c",
+  "5": "Method not implemented.arg0arg1"
+}

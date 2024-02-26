@@ -32,7 +32,7 @@ class FontMap {
     if (!window.opentype) {
       this.loading = true;
 
-      loadScript('https://felibs.nuonuo.com/libs/opentype.min.js').then(() => {
+      loadScript('https://cdn.jsdelivr.net/npm/opentype.js').then(() => {
         this.loading = false;
         // callback && callback();
       });

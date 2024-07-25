@@ -68,6 +68,7 @@ const OfdDecompress = ({
         if (
           fileType === 'application/ofd' ||
           fileType === 'ofd' ||
+          fileType === 'zip' ||
           fileType === 'application/dicom'
         ) {
           zip
@@ -120,8 +121,6 @@ export const getSVGDoms: (r: Options) => Promise<HTMLElement> = ({
 }: Options) =>
   new Promise((resolve, reject) => {
     LoadFontType.destroy();
-    console.log(1);
-    debugger;
     // 兼容ofd老版本
     if (!ofd && !file) {
       reject(new OFDErrors(400, 'file 参数不可为空'));

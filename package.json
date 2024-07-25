@@ -29,7 +29,7 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "dev": "rollup -wc ",
-    "build": "NODE_ENV=production rollup -c",
+    "build": "cross-env NODE_ENV=development rollup -c",
     "pretest": "npm run build"
   },
   "repository": {
@@ -48,6 +48,7 @@
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-replace": "^4.0.0",
+    "cross-env": "^7.0.3",
     "esbuild-wasm": "^0.14.39",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",

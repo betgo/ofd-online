@@ -135,7 +135,7 @@ const zipsFileType = {
     'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet': 'xlsx',
     'application/vnd.openxmlformats-officedocument.presentationml.presentation': 'pptx',
     'application/zip': 'zip',
-    'application/x-zip-ompressed': 'zip'
+    'application/x-zip-compressed': 'zip'
 };
 /**
  * 使用arrayBuffer获取文件Magic，转换为文件类型
@@ -14365,6 +14365,7 @@ const OfdDecompress = ({ file, requestData, requestOptions }) => {
             getFileType(file).then(fileType => {
                 if (fileType === 'application/ofd' ||
                     fileType === 'ofd' ||
+                    fileType === 'zip' ||
                     fileType === 'application/dicom') {
                     zip
                         .loadAsync(file)
@@ -14406,8 +14407,6 @@ const OfdDecompress = ({ file, requestData, requestOptions }) => {
  */
 const getSVGDoms = ({ file, ofd, content, id, screenWidth, ...restOptions }) => new Promise((resolve, reject) => {
     LoadFontType.destroy();
-    console.log(1);
-    debugger;
     // 兼容ofd老版本
     if (!ofd && !file) {
         reject(new VaildOFDError(400, 'file 参数不可为空'));

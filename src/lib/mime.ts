@@ -42,7 +42,7 @@ const zipsFileType: { [key: string]: string } = {
   'application/vnd.openxmlformats-officedocument.presentationml.presentation':
     'pptx',
   'application/zip': 'zip',
-  'application/x-zip-ompressed': 'zip'
+  'application/x-zip-compressed': 'zip'
 };
 
 /**
